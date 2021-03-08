@@ -6,7 +6,7 @@ const INITIAL_STATE = {
 
 const appReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case appActionTypes.INCREMENT:
+    case 'INCREMENT_FROM_SAGA':
       return {
         ...state,
         value: state.value + 1,
